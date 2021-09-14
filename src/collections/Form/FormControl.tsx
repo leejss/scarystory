@@ -4,8 +4,8 @@ export interface ControlProps {
   className?: string;
 }
 
-const Control: React.FC<ControlProps> = ({ children, className }) => {
+const FormControl: React.FC<ControlProps> = ({ children, className }) => {
   return <div className={className}>{children}</div>;
 };
 
-export default Control;
+export default FormControl;

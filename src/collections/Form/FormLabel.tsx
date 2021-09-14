@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { FormContext } from './Form';
 import { StyledLabel } from './Form.styles';
 
-const Label = React.forwardRef<
+const FormLabel = React.forwardRef<
   HTMLLabelElement,
   React.ComponentPropsWithoutRef<'label'>
 >((props, ref) => {
@@ -10,6 +10,6 @@ const Label = React.forwardRef<
   return <StyledLabel ref={ref} {...props} htmlFor={id} />;
 });
 
-Label.displayName = 'Form.Label';
+FormLabel.displayName = 'Form.Label';
 
-export default Label;
+export default FormLabel;

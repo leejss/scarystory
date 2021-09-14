@@ -3,7 +3,7 @@ import Form from './Form';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 
 export default {
-  title: 'Base/Form',
+  title: 'Collections/Form',
   component: Form,
   subcomponents: {
     Label: Form.Label,

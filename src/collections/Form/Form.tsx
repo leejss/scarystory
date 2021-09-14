@@ -1,7 +1,7 @@
 import React, { useContext, createContext } from 'react';
-import Input from './Input';
-import Label from './Label';
-import Control from './Control';
+import FornInput from './FormInput';
+import FormLabel from './FormLabel';
+import FormControl from './FormControl';
 
 // room for unique ID
 export const FormContext = createContext<string | undefined>(undefined);
@@ -11,9 +11,9 @@ export interface FormPorps {
 }
 
 export interface FormComposition {
-  Label: typeof Label;
-  Input: typeof Input;
-  Control: typeof Control;
+  Label: typeof FormLabel;
+  Input: typeof FornInput;
+  Control: typeof FormControl;
 }
 
 const Form: React.FC<FormPorps> & FormComposition = ({
@@ -28,8 +28,8 @@ const Form: React.FC<FormPorps> & FormComposition = ({
   );
 };
 
-Form.Input = Input;
-Form.Label = Label;
-Form.Control = Control;
+Form.Input = FornInput;
+Form.Label = FormLabel;
+Form.Control = FormControl;
 
 export default Form;
