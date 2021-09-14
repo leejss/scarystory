@@ -16,7 +16,6 @@ jobs:
           registry-url: 'https://npm.pkg.github.com'
           scope: '@leejss'
       - run: npm ci
-      - run: npm test
       - run: npm run lint
       - run: npm run build
       - run: npm publish
