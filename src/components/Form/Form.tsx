@@ -7,7 +7,7 @@ import Control from './Control';
 export const FormContext = createContext<string | undefined>(undefined);
 
 export interface FormPorps {
-  bordered?: boolean;
+  className?: string;
 }
 
 export interface FormComposition {
@@ -16,11 +16,14 @@ export interface FormComposition {
   Control: typeof Control;
 }
 
-const Form: React.FC<FormPorps> & FormComposition = ({ children }) => {
+const Form: React.FC<FormPorps> & FormComposition = ({
+  children,
+  className,
+}) => {
   const id = useContext(FormContext);
   return (
     <FormContext.Provider value={id}>
-      <form>{children}</form>
+      <form className={className}>{children}</form>
     </FormContext.Provider>
   );
 };

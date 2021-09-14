@@ -1,7 +1,11 @@
 import React from 'react';
 
-const Control: React.FC = ({ children }) => {
-  return <div>{children}</div>;
+export interface ControlProps {
+  className?: string;
+}
+
+const Control: React.FC<ControlProps> = ({ children, className }) => {
+  return <div className={className}>{children}</div>;
 };
 
 export default Control;
