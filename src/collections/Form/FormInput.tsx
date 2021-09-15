@@ -1,8 +1,7 @@
-import React from 'react';
 import { Input } from '../../elements/Input';
 
-const FormInput: React.FC = () => {
-  return <Input />;
-};
+const FormInput = Input;
+
+FormInput.displayName = 'Form.Input';
 
 export default FormInput;
