@@ -7,7 +7,7 @@ import commonjs from '@rollup/plugin-commonjs';
 import babel from '@rollup/plugin-babel';
 
 export default defineConfig({
-  input: './src/components/index.ts',
+  input: './src/index.ts',
   plugins: [
     del({ targets: 'dist/*' }),
     externals({ deps: true }),
