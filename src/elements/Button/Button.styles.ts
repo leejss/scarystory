@@ -59,7 +59,7 @@ export const StyledButton = styled.button<ButtonProps>`
   /* Defualt Style */
   color: #fff;
   text-align: center;
-  font-weight: 400;
+  font-weight: 800;
   border: 1px solid transparent;
   line-height: 1.5;
   cursor: pointer;

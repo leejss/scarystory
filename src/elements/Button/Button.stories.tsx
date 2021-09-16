@@ -8,6 +8,7 @@ export default {
   args: {
     round: false,
     size: 'medium',
+    fullWidth: false,
   },
 } as ComponentMeta<typeof Button>;
 

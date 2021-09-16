@@ -26,7 +26,7 @@ const sizeSupport = (p: InputProps) => {
 export const StyledInput = styled.input<InputProps>`
   /* Default style */
   box-sizing: border-box;
-  border: 1px solid gray;
+  border: 1px solid #e3e3e3;
   outline: none;
   border-radius: 5px;
   width: 100%;

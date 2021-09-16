@@ -8,7 +8,6 @@ export default {
   args: {
     disabled: false,
     error: false,
-    loading: false,
     large: false,
   },
 } as ComponentMeta<typeof Input>;
@@ -16,6 +15,5 @@ export default {
 const Template: Story<InputProps> = (args) => <Input {...args} />;
 export const Default = Template.bind({});
 Default.args = {
-  loading: false,
   placeholder: "I'm ready",
 };

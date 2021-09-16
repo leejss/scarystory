@@ -12,16 +12,6 @@ export const StyledControl = styled.div<FormControlProps>`
   gap: ${(p) => `${p.gutter}px`};
 `;
 
-const gutterSupport = (p: FormPorps) => {
-  if (p.gutter) {
-    return css`
-      display: grid;
-      gap: ${p.gutter}px;
-    `;
-  }
-};
-
 export const StyledForm = styled.form<FormPorps>`
   /* Gutter support  */
-  ${gutterSupport}
 `;
